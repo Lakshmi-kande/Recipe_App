@@ -13,7 +13,7 @@ export const Auth = () => {
 };
 
 const Login = () => {
-  const [setCookies] = useCookies(["access_token"]);
+  const [_, setCookies] = useCookies(["access_token"]);
 
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
